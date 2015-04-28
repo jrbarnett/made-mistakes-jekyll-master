@@ -1,0 +1,92 @@
+# Site wide configuration
+
+title: "Jessica R. Barnett, Ph.D."
+description: "Personal website of Buffala-based pianist slash music theorist slash educator Jessica Barnett"
+logo: site-logo.png
+teaser: default-teaser.png
+locale: en_US
+url: 
+
+
+# Jekyll configuration
+
+permalink: /:categories/:title/
+lsi: true
+markdown: kramdown
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-archives
+include: [".htaccess"]
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "node_modules", "Gruntfile.js", "package.json", ".jekyll-assets-cache"]
+
+
+# Plugin: jekyll-assets
+
+assets:
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+  baseurl: https://mademistakes.com/assets/
+  js_compressor: uglifier
+  css_compressor: sass
+  cachebust: hard
+  cache: true
+  debug: false
+  version: 1
+
+
+# Plugin: jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - tags
+    - year
+  layouts:
+    year: year_index
+    tag: tag_index
+  permalinks:
+    year: /:year/
+    tag: /tag/:name/
+
+
+# Site owner
+
+owner:
+  name: Jessica Barnett
+  email: barnett.jessica@gmail.com
+  twitter: bcmoseley
+  facebook: jessica.moseley.94
+  instagram: 
+  tumblr: 
+  github: jrbarnett
+  github-repo: 
+  google:
+    ad-client: 
+    ad-slot: 
+    analytics: UA-2011187-1
+    plus: 
+    verify: geapSKtvpBNDSfXVmF09E9CnaHGglbO61r4XgLZtEmo
+  bing:
+    verify: D81F4C18A6CB3018F64D7C827D953DFD
+  alexa:
+    verify: Y5DYjZ4VWlrQzBP5kcQJeOKLNas
+  yandex:
+    verify: 55a5419baf76a498
+  bio: "Brighty-eyed and bushy-tailed musician living in Buffalo, NY." # 160x160 px image for author byline
+disqus-shortname: 
+
+
+# Collections
+
+collections:
+  faqs:
+    output: true
+    permalink: /:collection/:path/
+    title: FAQs
+  components:
+    output: false
+  colors:
+    output: false

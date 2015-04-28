@@ -1,0 +1,21 @@
+# Site navigation links
+
+- title: Blog
+  url: /blog/
+  excerpt: "A collection of my thoughts."
+  image: skinny-bones-theme-teaser-225.jpg
+
+- title: Articles
+  url: /articles/
+  excerpt: "A collection of my scholarly work."
+  image: paper-53-erasing-teaser-225.jpg
+
+- title: Lessons
+  url: /studio/
+  excerpt: "Information about piano lessons."
+  image: relic-scout-teaser-225.jpg
+
+- title: About
+  url: /about/
+  excerpt: "Learn more about me and the site."
+  image: about-teaser-225.jpg

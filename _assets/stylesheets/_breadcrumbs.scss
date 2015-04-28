@@ -1,0 +1,37 @@
+/* ==========================================================================
+   PAGE META INFORMATION and BREADCRUMBS
+   ========================================================================== */
+
+.page-meta,
+.breadcrumbs {
+  @include clearfix;
+  font-family: $alt-font;
+  @include font-size(14, no, 21);
+  font-weight: 400;
+  text-align: left;
+  a {
+    display: inline-block;
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+.page-meta {
+  margin-top: $gutter;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-out;
+  &:hover {
+    opacity: 1;
+  }
+  span {
+    display: block;
+  }
+}
+
+.breadcrumbs {
+  margin-bottom: $gutter;
+  .sep {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
